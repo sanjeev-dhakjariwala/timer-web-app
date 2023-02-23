@@ -15,7 +15,7 @@ function updateClock() {
 
   // Add a leading zero for single-digit minutes and seconds
   if (hours < 10) {
-    hours = "0" + minutes;
+    hours = "0" + hours;
   }
   if (minutes < 10) {
     minutes = "0" + minutes;
@@ -28,6 +28,7 @@ function updateClock() {
   document.getElementById("hours").textContent = hours;
   document.getElementById("minutes").textContent = minutes;
   document.getElementById("seconds").textContent = seconds;
+  document.getElementById("timerStatus").textContent = "Timer Started Successfully!!";
 }
 
 //Start Timer Function
@@ -45,6 +46,7 @@ function startTimer() {
 function stopTimer() {
   clearInterval(timerInterval);
   timerInterval = null;
+  document.getElementById("timerStatus").textContent = "Timer Stopped Successfully!!";
 }
 
 //Reset Timer Function
@@ -54,6 +56,7 @@ function resetTimer() {
   document.getElementById("hours").textContent = "00";
   document.getElementById("minutes").textContent = "00";
   document.getElementById("seconds").textContent = "00";
+  document.getElementById("timerStatus").textContent = "Timer Reset Successfully!!";
 }
 
 // Adding click event listener to all three buttons
