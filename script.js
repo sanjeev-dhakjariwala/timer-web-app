@@ -47,7 +47,7 @@ function stopTimer() {
   timerInterval = null;
 }
 
-//Reset Timer
+//Reset Timer Function
 function resetTimer() {
   startTime = null;
   stopTimer();
