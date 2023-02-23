@@ -6,59 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Poppins Added from Google Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Timer Web App</title>
   </head>
   <body>
-    <h1 class="text-6xl font-bold text-center text-gray-800 my-8">
+    <!-- Title -->
+    <h1 class="text-3xl sm:text-3xl md:text-5xl lg:text-7xl font-bold text-center text-gray-800 my-8">
       TIMER WEB APP
     </h1>
     <div class="flex items-center justify-center">
       <div class="w-1/2 bg-slate-900 rounded-lg shadow-lg p-6">
         <div class="flex items-center justify-center">
+          <!-- Hours Span -->
           <span class="text-white text-3xl sm:text-5xl md:text-7xl lg:text-9xl"
+          id="hours"
             >00</span
           >
           <span class="text-white text-3xl sm:text-5xl md:text-7xl lg:text-9xl"
             >:</span
           >
+          <!-- Minutes span -->
           <span class="text-white text-3xl sm:text-5xl md:text-7xl lg:text-9xl"
+          id="minutes"
             >00</span
           >
           <span class="text-white text-3xl sm:text-5xl md:text-7xl lg:text-9xl"
             >:</span
           >
+          <!-- Seconds span -->
           <span class="text-white text-3xl sm:text-5xl md:text-7xl lg:text-9xl"
+          id="seconds"
             >00</span
           >
         </div>
         <div class="flex items-center justify-center mt-10">
+          <!-- Start Buuton -->
           <button
             class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 mr-2 rounded"
-            id="start"
+            id="startButton"
           >
             Start
           </button>
+          <!-- Stop Button -->
           <button
             class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded mr-2"
-            id="reset"
+            id="stopButton"
           >
             Stop
           </button>
+          <!-- Reset Button -->
           <button
             class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"
-            id="stop"
+            id="resetButton"
           >
             Reset
           </button>
         </div>
       </div>
     </div>
-
+    <!-- Tailwind Css Added -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
   </body>
