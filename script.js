@@ -28,7 +28,7 @@ function updateClock() {
   document.getElementById("hours").textContent = hours;
   document.getElementById("minutes").textContent = minutes;
   document.getElementById("seconds").textContent = seconds;
-  document.getElementById("timerStatus").textContent = "Timer Started Successfully!!";
+  
 }
 
 //Start Timer Function
@@ -38,6 +38,7 @@ function startTimer() {
   }
   if (!timerInterval) {
     //Using setInternal provided by Vanilla Javascript
+    document.getElementById("timerStatus").textContent = "Timer Started Successfully!!";
     timerInterval = setInterval(updateClock, 1000);
   }
 }
